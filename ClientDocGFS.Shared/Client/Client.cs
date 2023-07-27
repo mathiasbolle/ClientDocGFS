@@ -1,4 +1,4 @@
-namespace ClientDocGFS.Data.Models;
+namespace ClientDocGFS.Shared.Client;
 
 public class Client
 {

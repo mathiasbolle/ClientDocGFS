@@ -1,6 +1,6 @@
-namespace ClientDocGFS.Data.Models;
+namespace ClientDocGFS.Shared.Client;
 
-public class ClientRequest
+public static class ClientRequest
 {
     
 }
