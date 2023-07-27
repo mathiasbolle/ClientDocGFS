@@ -1,0 +1,28 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:ClientDocGFS.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="620"
+             x:Class="ClientDocGFS.Views.HomeView">
+
+        <Grid Margin="0,20,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*"></RowDefinition>
+                <RowDefinition Height="50*"></RowDefinition>
+                <RowDefinition Height="25*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" HorizontalAlignment="Center" Foreground="#7e97a9" FontSize="24">ClientDocGFS</Label>
+            <StackPanel Grid.Row="1">
+                <Image Source="../Assets/gfs_home.png" Width="400" Margin="0,0,0,30"></Image>
+                <Grid ColumnDefinitions="Auto, Auto" HorizontalAlignment="Center">
+                    <Button Grid.Column="0" Margin="0,0,30,0" Background="#be1635" Foreground="White" FontSize="16">Aanmaken Klant</Button>
+                    <Button Grid.Column="1" Background="#be1635" Foreground="White" FontSize="16">Beheren Klant</Button>
+                </Grid>
+            </StackPanel>
+            
+            
+
+            <Image Grid.Row="2" Source="../Assets/gfs_background_logo_cropped.png" HorizontalAlignment="Left"></Image>
+        </Grid>
+</UserControl>
