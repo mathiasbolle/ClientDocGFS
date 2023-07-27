@@ -12,17 +12,21 @@
                 <RowDefinition Height="50*"></RowDefinition>
                 <RowDefinition Height="25*"></RowDefinition>
             </Grid.RowDefinitions>
-            <Label Grid.Row="0" HorizontalAlignment="Center" Foreground="#7e97a9" FontSize="24">ClientDocGFS</Label>
+            <Label Grid.Row="0" HorizontalAlignment="Center" Foreground="#7e97a9" FontSize="24">Client Document Generator</Label>
             <StackPanel Grid.Row="1">
                 <Image Source="../Assets/gfs_home.png" Width="400" Margin="0,0,0,30"></Image>
                 <Grid ColumnDefinitions="Auto, Auto" HorizontalAlignment="Center">
-                    <Button Grid.Column="0" Margin="0,0,30,0" Background="#be1635" Foreground="White" FontSize="16">Aanmaken Klant</Button>
-                    <Button Grid.Column="1" Background="#be1635" Foreground="White" FontSize="16">Beheren Klant</Button>
+                    <Button Grid.Column="0" Margin="0,0,30,0" Background="#be1635" Foreground="White" FontSize="16"
+                            x:CompileBindings="False"
+                            Command="{Binding $parent[Window].DataContext.AddClient}"
+                            >Aanmaken Klant</Button>
+                    <Button Grid.Column="1" Background="#be1635" Foreground="White" FontSize="16"
+                            x:CompileBindings="False"
+                            Command="{Binding $parent[Window].DataContext.ManageClients}"
+                            
+                            >Beheren Klanten</Button>
                 </Grid>
             </StackPanel>
-            
-            
-
             <Image Grid.Row="2" Source="../Assets/gfs_background_logo_cropped.png" HorizontalAlignment="Left"></Image>
         </Grid>
 </UserControl>

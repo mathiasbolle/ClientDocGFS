@@ -10,9 +10,8 @@
         Width="700" Height="620"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="GFS - Client Document Generator">
+        Title="GFS - Client Document Generator"
+        Content="{Binding ContentViewModel }">
 
-
-    <views:HomeView />
 
 </Window>
