@@ -1,10 +1,13 @@
-﻿using ReactiveUI;
+﻿using System;
+using ClientDocGFS.Shared.Client;
+using ReactiveUI;
 
 namespace ClientDocGFS.ViewModels;
 
 public class MainWindowViewModel : ViewModelBase
 {
     private ViewModelBase _contentViewModel;
+    private Client client = new();
 
     public MainWindowViewModel()
     {
@@ -19,11 +22,21 @@ public class MainWindowViewModel : ViewModelBase
 
     public void AddClient()
     {
-        ContentViewModel = new AddClientViewModel();
+        ContentViewModel = new AddClientGeneralInfoViewModel(client);
     }
 
     public void ManageClients()
     {
         ContentViewModel = new ManageClientsViewModel();
+    }
+
+    public void BackToHome()
+    {
+        ContentViewModel = new HomeViewModel();
+    }
+
+    public void GoToFormStep2()
+    {
+        ContentViewModel = new AddClientBusinessInfoPart1View(client);
     }
 }

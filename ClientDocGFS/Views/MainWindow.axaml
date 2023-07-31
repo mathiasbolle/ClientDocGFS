@@ -9,9 +9,7 @@
         CanResize="False"
         Width="700" Height="620"
         x:DataType="vm:MainWindowViewModel"
-        Icon="/Assets/avalonia-logo.ico"
+        Icon="/Assets/logo.ico"
         Title="GFS - Client Document Generator"
         Content="{Binding ContentViewModel }">
-
-
 </Window>
