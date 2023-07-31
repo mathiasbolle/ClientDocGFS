@@ -1,4 +1,5 @@
 ﻿using System;
+using ClientDocGFS.Domain;
 using ClientDocGFS.Shared.Client;
 using ReactiveUI;
 
@@ -39,4 +40,6 @@ public class MainWindowViewModel : ViewModelBase
     {
         ContentViewModel = new AddClientBusinessInfoPart1View(client);
     }
+
+
 }

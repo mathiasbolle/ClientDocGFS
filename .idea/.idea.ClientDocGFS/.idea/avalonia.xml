@@ -3,9 +3,11 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="ClientDocGFS/App.axaml" value="ClientDocGFS/ClientDocGFS.csproj" />
         <entry key="ClientDocGFS/Views/AddClientBusinessInfoPart1View.axaml" value="ClientDocGFS/ClientDocGFS.csproj" />
         <entry key="ClientDocGFS/Views/AddClientGeneralInfoView.axaml" value="ClientDocGFS/ClientDocGFS.csproj" />
         <entry key="ClientDocGFS/Views/AddClientView.axaml" value="ClientDocGFS/ClientDocGFS.csproj" />
+        <entry key="ClientDocGFS/Views/ClientResultView.axaml" value="ClientDocGFS/ClientDocGFS.csproj" />
         <entry key="ClientDocGFS/Views/HomeView.axaml" value="ClientDocGFS/ClientDocGFS.csproj" />
         <entry key="ClientDocGFS/Views/MainWindow.axaml" value="ClientDocGFS/ClientDocGFS.csproj" />
         <entry key="ClientDocGFS/Views/ManageClientView.axaml" value="ClientDocGFS/ClientDocGFS.csproj" />

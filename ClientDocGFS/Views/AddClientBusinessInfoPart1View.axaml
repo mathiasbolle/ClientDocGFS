@@ -6,5 +6,54 @@
              xmlns:vm="using:ClientDocGFS.ViewModels"
              x:DataType="vm:AddClientBusinessInfoPart1View"
              x:Class="ClientDocGFS.Views.AddClientBusinessInfoPart1View">
-    
+    <Grid Margin="0,20,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12.5*"></RowDefinition>
+            <RowDefinition Height="12.5*"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
+            <RowDefinition Height="25*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" HorizontalAlignment="Center" Foreground="#7e97a9" FontSize="24">Registratie Nieuwe Klant</Label>
+        <Label Grid.Row="1" HorizontalAlignment="Center">Progress bar</Label>
+        <Grid Grid.Row="2" ColumnDefinitions="*,*" RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto">
+            <!--Naam/voornaam-->
+            <Label Grid.Row="0" Grid.Column="0">Ondernemingsnummer</Label>
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding EnterpriseNumber}"></TextBox>
+
+            <!--Naam/voornaam partner-->
+            <Label Grid.Row="1" Grid.Column="0">Rijksregisternummer</Label>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding NationalNumber}"></TextBox>
+
+            <!--Adres part 1 (only streetname)-->
+            <Label Grid.Row="2" Grid.Column="0">Kinderen ten laste</Label>
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Kids}"></TextBox>
+
+            <!--Adres part 2 (city)-->
+            <Label Grid.Row="3" Grid.Column="0">Bankkantoor rekeningnummer</Label>
+            <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Banknumber}"></TextBox>
+
+
+            <Label Grid.Row="4" Grid.Column="0">Buitelandse rekening</Label>
+            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding BankNumberOtherCountry}"></TextBox>
+        </Grid>
+
+        <Grid Grid.Row="3" ColumnDefinitions="Auto,Auto">
+            <Image Grid.Column="0" Source="../Assets/gfs_background_logo_cropped.png" HorizontalAlignment="Left"></Image>
+
+            <Grid Grid.Column="1" ColumnDefinitions="Auto, Auto" HorizontalAlignment="Center">
+                <Button Grid.Column="0" Margin="0,0,0,0"
+                        Background="#be1635" Foreground="White" FontSize="16"
+                        x:CompileBindings="False"
+                        Command="{Binding $parent[Window].DataContext.AddClient}">
+                    Terug
+                </Button>
+                <Button Grid.Column="1" Margin="0,0,0,0"
+                        Background="#be1635" Foreground="White" FontSize="16"
+                        x:CompileBindings="False"
+                        Command="{Binding $parent[Window].DataContext.GoToFormStep2}">
+                    Volgende
+                </Button>
+            </Grid>
+        </Grid>
+    </Grid>
 </UserControl>

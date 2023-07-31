@@ -1,3 +1,4 @@
+using ClientDocGFS.Domain;
 using ClientDocGFS.Shared.Client;
 using ReactiveUI;
 

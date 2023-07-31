@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientDocGFS.Service", "Cli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientDocGFS.Shared", "ClientDocGFS.Shared\ClientDocGFS.Shared.csproj", "{9E46F3AC-C3F7-4D0C-BEDE-4066031D0598}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientDocGFS.Domain", "ClientDocGFS.Domain\ClientDocGFS.Domain.csproj", "{1DBF6813-9181-43B6-BAE4-45EA3A34E584}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{9E46F3AC-C3F7-4D0C-BEDE-4066031D0598}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E46F3AC-C3F7-4D0C-BEDE-4066031D0598}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E46F3AC-C3F7-4D0C-BEDE-4066031D0598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DBF6813-9181-43B6-BAE4-45EA3A34E584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DBF6813-9181-43B6-BAE4-45EA3A34E584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DBF6813-9181-43B6-BAE4-45EA3A34E584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DBF6813-9181-43B6-BAE4-45EA3A34E584}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

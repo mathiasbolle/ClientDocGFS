@@ -1,7 +1,8 @@
+using ClientDocGFS.Domain;
 using ClientDocGFS.Shared.Client;
 using Microsoft.EntityFrameworkCore;
 
-namespace ClientDocGFS.Data.Models;
+namespace ClientDocGFS.Data;
 
 public class GfsContext: DbContext
 {
