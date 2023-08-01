@@ -4,6 +4,9 @@ using ClientDocGFS.Shared.Client;
 
 namespace ClientDocGFS.Service;
 
+/**
+ * NOT async version
+ */
 public class ClientService : IClientService
 {
     private readonly GfsContext db;
@@ -22,7 +25,7 @@ public class ClientService : IClientService
         return queryable.AsEnumerable();
     }
 
-    public Task<int> CreateAsync(ClientRequest.Create Modal)
+    public void CreateAsync(ClientRequest.Create Modal)
     {
         db.Clients.Add(
             new ClientDto()
@@ -37,7 +40,5 @@ public class ClientService : IClientService
         );
 
         db.SaveChanges();
-
-        return (Task<int>)Task.CompletedTask;
     }
 }

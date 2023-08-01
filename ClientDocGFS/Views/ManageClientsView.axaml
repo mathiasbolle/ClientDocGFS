@@ -12,12 +12,18 @@
             <RowDefinition Height="62.5*"></RowDefinition>
             <RowDefinition Height="25*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" HorizontalAlignment="Center" Foreground="#7e97a9" FontSize="24">Overzicht KLanten</Label>
+        <Label Grid.Row="0" HorizontalAlignment="Center" Foreground="#7e97a9" FontSize="24">Overzicht Klanten</Label>
 
         <Grid Grid.Row="1">
-            <DataGrid Name="Clients" ItemsSource="{Binding Clients}"></DataGrid>
+            <DataGrid Name="Clients" ItemsSource="{Binding Clients}" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="id" Binding="{Binding ClientId}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="Voornaam" Binding="{Binding FirstName}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="Familienaam" Binding="{Binding LastName}" IsReadOnly="True" />
+                </DataGrid.Columns>
+            </DataGrid>
         </Grid>
-        
+
         <Grid Grid.Row="2" ColumnDefinitions="Auto,Auto">
             <Image Grid.Column="0" Source="../Assets/gfs_background_logo_cropped.png" HorizontalAlignment="Left"></Image>
 

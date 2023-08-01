@@ -12,5 +12,5 @@ public interface IClientService
 
     public IEnumerable<ClientDto> GetAll();
 
-    public Task<int> CreateAsync(ClientRequest.Create Modal);
+    public void CreateAsync(ClientRequest.Create Modal);
 }

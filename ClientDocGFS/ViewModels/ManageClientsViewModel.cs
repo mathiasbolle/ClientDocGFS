@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using ClientDocGFS.Domain;
 using ClientDocGFS.Service;
 using ClientDocGFS.Shared.Client;
+using Microsoft.CodeAnalysis;
 
 namespace ClientDocGFS.ViewModels;
 
@@ -14,7 +16,15 @@ public class ManageClientsViewModel : ViewModelBase
     {
         this.clientService = clientService;
         
-        Clients = this.clientService.GetAll();
         this.clientService.CreateAsync(new ClientRequest.Create() { FirstName = "Mathias", LastName = "Bolle"});
+        Clients = this.clientService.GetAll();
+        
+        
+        //log clients
+        foreach (var clientDto in Clients)
+        {
+            Console.WriteLine(clientDto);
+        }
+        
     }
 }
