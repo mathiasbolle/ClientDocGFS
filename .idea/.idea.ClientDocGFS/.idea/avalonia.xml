@@ -11,6 +11,7 @@
         <entry key="ClientDocGFS/Views/HomeView.axaml" value="ClientDocGFS/ClientDocGFS.csproj" />
         <entry key="ClientDocGFS/Views/MainWindow.axaml" value="ClientDocGFS/ClientDocGFS.csproj" />
         <entry key="ClientDocGFS/Views/ManageClientView.axaml" value="ClientDocGFS/ClientDocGFS.csproj" />
+        <entry key="ClientDocGFS/Views/ManageClientsView.axaml" value="ClientDocGFS/ClientDocGFS.csproj" />
       </map>
     </option>
   </component>

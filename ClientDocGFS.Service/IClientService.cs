@@ -10,7 +10,7 @@ public interface IClientService
 {
     //public async Task
 
-    public IEnumerable<Client> GetAll();
+    public IEnumerable<ClientDto> GetAll();
 
     public Task<int> CreateAsync(ClientRequest.Create Modal);
 }

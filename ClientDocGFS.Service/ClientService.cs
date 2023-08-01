@@ -11,10 +11,11 @@ public class ClientService : IClientService
     public ClientService(GfsContext context)
     {
         db = context;
+        db.Database.EnsureCreated();
     }
 
     //fix this to convert to Dto
-    public IEnumerable<Client> GetAll()
+    public IEnumerable<ClientDto> GetAll()
     {
         var queryable = db.Clients.Select(client => client);
 
@@ -24,7 +25,7 @@ public class ClientService : IClientService
     public Task<int> CreateAsync(ClientRequest.Create Modal)
     {
         db.Clients.Add(
-            new Client()
+            new ClientDto()
             {
                 AdressStreetName = Modal.AdressStreetName, bankNumber = Modal.bankNumber,
                 bankNumberOtherCountry = Modal.bankNumberOtherCountry,

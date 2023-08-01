@@ -1,5 +1,7 @@
 ﻿using System;
+using ClientDocGFS.Data;
 using ClientDocGFS.Domain;
+using ClientDocGFS.Service;
 using ClientDocGFS.Shared.Client;
 using ReactiveUI;
 
@@ -28,7 +30,7 @@ public class MainWindowViewModel : ViewModelBase
 
     public void ManageClients()
     {
-        ContentViewModel = new ManageClientsViewModel();
+        ContentViewModel = new ManageClientsViewModel(clientService: new ClientService(new GfsContext()));
     }
 
     public void BackToHome()
