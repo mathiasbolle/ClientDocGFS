@@ -14,7 +14,9 @@ public class GfsContext : DbContext
     {
         var folder = Environment.SpecialFolder.LocalApplicationData;
         var path = Environment.GetFolderPath(folder);
-        DbPath = System.IO.Path.Join(path, "gfs.db");
+        System.IO.Directory.CreateDirectory(System.IO.Path.Join(path, "ClientDocGFS"));
+        
+        DbPath = System.IO.Path.Join(path, "ClientDocGFS\\gfs.db");
     }
 
     // The following configures EF to create a Sqlite database file in the
