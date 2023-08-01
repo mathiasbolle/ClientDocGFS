@@ -5,6 +5,6 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              xmlns:vm="using:ClientDocGFS.ViewModels"
              x:DataType="vm:ManageClientsViewModel"
-             x:Class="ClientDocGFS.Views.ManageClientView">
+             x:Class="ClientDocGFS.Views.ManageClientsView">
     Manage Clients that are already created (with SQLlite)
 </UserControl>

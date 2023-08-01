@@ -4,9 +4,9 @@ using Avalonia.Markup.Xaml;
 
 namespace ClientDocGFS.Views;
 
-public partial class ManageClientView : UserControl
+public partial class ManageClientsView : UserControl
 {
-    public ManageClientView()
+    public ManageClientsView()
     {
         InitializeComponent();
     }
