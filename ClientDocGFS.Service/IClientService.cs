@@ -1,3 +1,6 @@
+using ClientDocGFS.Domain;
+using ClientDocGFS.Shared.Client;
+
 namespace ClientDocGFS.Service;
 
 /**
@@ -6,4 +9,8 @@ namespace ClientDocGFS.Service;
 public interface IClientService
 {
     //public async Task
+
+    public IEnumerable<Client> GetAll();
+
+    public Task<int> CreateAsync(ClientRequest.Create Modal);
 }
